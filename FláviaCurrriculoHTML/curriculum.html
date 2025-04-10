@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo Portifólio</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    :root {
+      --primary-color: #a855f7;
+      --background: #0f0f1a;
+      --text-light: #e0e0e0;
+      --accent: #7c3aed;
+      --border: #a78bfa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Vídeo de fundo */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      z-index: -2;
+      object-fit: cover;
+      opacity: 0.85;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(15, 15, 26, 0.6);
+      z-index: -1;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: transparent;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .top-nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.3s;
+    }
+
+    .top-nav a:hover {
+      color: var(--primary-color);
+    }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: rgba(15, 15, 26, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(22, 6, 65, 0.3);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      color: var(--primary-color);
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .anchors {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .anchors a {
+      color: var(--text-light);
+      background: var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background 0.3s;
+    }
+
+    .anchors a:hover {
+      background: var(--primary-color);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-left: 4px solid var(--primary-color);
+      padding-left: 0.6rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: var(--primary-color);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin: 0.3rem 0.4rem;
+      transition: transform 0.2s ease;
+    }
+
+    .tag:hover {
+      transform: scale(1.1);
+      background-color: var(--primary-color);
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      transition: background 0.3s;
+    }
+
+    .contact-links a:hover {
+      background: var(--primary-color);
+    }
+  </style>
+</head>
+
+<body>
+
+ 
+
+  
+  <video autoplay muted loop id="bg-video">
+    <source src="video2.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  
+  <nav class="top-nav">
+    <a href="#sobre"><i data-lucide="user" class="icon"></i><span>Sobre</span></a>
+    <a href="#habilidades"><i data-lucide="code" class="icon"></i><span>Habilidades</span></a>
+    <a href="#projetos"><i data-lucide="gamepad" class="icon"></i><span>Projetos</span></a>
+    <a href="#contato"><i data-lucide="mail" class="icon"></i><span>Contato</span></a>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Flávia Marcelino de Andrade</h1>
+      <p>otabalho67@gmail.com | Lauro de Freitas - BA</p>
+      <div class="anchors">
+        <a href="#sobre"><i data-lucide="user" class="icon"></i>Sobre</a>
+        <a href="#habilidades"><i data-lucide="code" class="icon"></i>Habilidades</a>
+        <a href="#projetos"><i data-lucide="gamepad" class="icon"></i>Projetos</a>
+        <a href="#experiencias"><i data-lucide="briefcase" class="icon"></i>Experiências</a>
+        <a href="#formacao"><i data-lucide="book" class="icon"></i>Formação</a>
+      </div>
+    </header>
+
+    
+    
+    
+    
+
+    <section id="sobre">
+      <h2>Resumo Pessoal</h2>
+      <p>
+        Estudante de Tecnologia em Jogos Digitais no Instituto Federal da Bahia, com experiência em desenvolvimento de jogos 2D, 3D, mobile e desktop. Atuei com introdução à programação em C#, e trabalhei com design e programação web na Fundação Escola Politécnica da Bahia. Também desenvolvo motores para jogos, explorando suas funcionalidades e potencial criativo. Estou sempre em busca de evolução, compartilhando conhecimento e criando soluções criativas.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div>
+        <span class="tag">C#</span>
+        <span class="tag">Python</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Lua</span>
+        <span class="tag">C++</span>
+        <span class="tag">Unity</span>
+        <span class="tag">Figma</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Git</span>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <ul>
+        <li>Jogo educativo 2D sobre reciclagem em Unity</li>
+        <li>Protótipo de escape room em C# para desktop</li>
+        <li>Interface de menu para mobile usando Figma e Unity</li>
+      </ul>
+    </section>
+
+    <section id="experiencias">
+      <h2>Experiências</h2>
+      <ul>
+        <li><strong>Fundação Escola Politécnica da Bahia</strong> - Design e programação web (2023)</li>
+        <li><strong>Projetos Integradores (IFBA)</strong> - Desenvolvimento de jogos 2D, 3D, mobile e desktop</li>
+        <li>Apoio a colegas no aprendizado introdutório de C#</li>
+      </ul>
+    </section>
+
+    <section id="diferenciais">
+      <h2>Diferenciais</h2>
+       <div class="tags">
+          <span class="tag">Domínio em Design Gráfico</span>
+          <span class="tag">Criação de Interfaces (UI)</span>
+          <span class="tag">Identidade Visual</span>
+          <span class="tag">Design para Jogos</span>
+          <span class="tag">Prototipação</span>
+          <span class="tag">Experiência com Figma e Illustrator</span>
+          </div>
+   </section>
+
+
+    <section id="formacao">
+      <h2>Formação</h2>
+      <p><strong>Tecnologia em Jogos Digitais</strong> - Instituto Federal da Bahia, Campus Lauro de Freitas (Em andamento)</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <ul class="contato-lista">
+        <li><i data-lucide="mail" class="icon"></i> otabalho67@gmail.com</li>
+        <li><i data-lucide="linkedin" class="icon"></i> linkedin.com/in/flaviamarcelino</li>
+        <li><i data-lucide="palette" class="icon"></i> artstation.com/flaviamarcelino</li>
+      </ul>
+    </section>
+    
+  </div>
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <div class="container">
+  <!-- Todo o conteúdo do seu currículo aqui -->
+
+    <footer class="footer" style="text-align: center;">
+    <p>© 2025 Flávia Marcelino. Todos os direitos reservados.</p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>

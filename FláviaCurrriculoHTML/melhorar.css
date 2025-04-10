@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: url('/caminho/para/download.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+
+    #contato {
+      margin-top: 40px;
+    }
+    
+    .contato-lista {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .contato-lista li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+    
+    .contato-lista .icon {
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+      stroke-width: 1.5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .tag {
+      background-color: var(--accent-light, #f0f0f0);
+      color: var(--accent, #333);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      padding: 1rem 0 0;
+      margin-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    
+    
+
+    .footer {
+      background-color: #f0f0f0; /* ou outra cor que combine com seu estilo */
+      border-top: 1px solid #ccc;
+    }
+    
+    
+    
+    
+    
+    
+  }
+  
+  
